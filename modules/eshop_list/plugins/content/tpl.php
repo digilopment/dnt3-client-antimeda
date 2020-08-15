@@ -39,17 +39,19 @@
             if ($data['hasItems']) {
                 foreach ($data['items'] as $item) {
                     ?>
-                    <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6">
                         <div class="grid-view brows-job-list">
                             <div class="brows-job-company-img">
                                 <img src="<?php echo $data['postImage']($item['id_entity']); ?>" class="img-responsive" alt="" />
                             </div>
                             <div class="brows-job-position">
-                                <h3><a href="<?php echo $data['detailtUlr']($item['id_entity'], $item['name_url']) ?>">Web Developer</a></h3>
-                                <p><span>Google</span></p>
+                                <h3><a href="<?php echo $data['detailtUlr']($item['id_entity'], $item['name_url']) ?>">
+                                        <?php echo $item['position']; ?> - <?php echo $item['specialization']; ?>
+                                    </a></h3>
+                                <p><span><?php echo $item['company_name']; ?></span></p>
                             </div>
                             <div class="job-position">
-                                <span class="job-num">5 Position</span>
+                                <span class="job-num"><?php echo $item['company_state']; ?></span>
                             </div>
                             <div class="brows-job-type">
                                 <span class="full-time">Full Time</span>
@@ -57,14 +59,16 @@
                             <ul class="grid-view-caption">
                                 <li>
                                     <div class="brows-job-location">
-                                        <p><i class="fa fa-map-marker"></i>QBL Park, C40</p>
+                                        <p><i class="fa fa-map-marker"></i><?php echo $item['company_street']; ?>, <?php echo $item['company_city']; ?></p>
                                     </div>
                                 </li>
                                 <li>
-                                    <p><span class="brows-job-sallery"><i class="fa fa-money"></i>$110 - 200</span></p>
+                                    <p><span class="brows-job-sallery"><i class="fa fa-money"></i><?php echo $item['price']; ?></span>€</p>
                                 </li>
                             </ul>
-                            <span class="tg-themetag tg-featuretag">Premium</span>
+                            <?php if ($item['is_premium']) { ?>
+                                <span class="tg-themetag tg-featuretag">Premium</span>
+                            <?php } ?>
                         </div>
                     </div>
 

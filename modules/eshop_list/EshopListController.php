@@ -188,6 +188,13 @@ class EshopListController extends BaseController
             $final[$key] = $item;
             $postId = $item['id_entity'];
             $final[$key]['price'] = isset($metaData['keys'][$postId]['price']) && $metaData['keys'][$postId]['price']['show'] == 1 ? $metaData['keys'][$postId]['price']['value'] : false;
+            $final[$key]['position'] = isset($metaData['keys'][$postId]['position']) && $metaData['keys'][$postId]['position']['show'] == 1 ? $metaData['keys'][$postId]['position']['value'] : false;
+            $final[$key]['specialization'] = isset($metaData['keys'][$postId]['specialization']) && $metaData['keys'][$postId]['specialization']['show'] == 1 ? $metaData['keys'][$postId]['specialization']['value'] : false;
+            $final[$key]['company_name'] = isset($metaData['keys'][$postId]['company_name']) && $metaData['keys'][$postId]['company_name']['show'] == 1 ? $metaData['keys'][$postId]['company_name']['value'] : false;
+            $final[$key]['company_street'] = isset($metaData['keys'][$postId]['company_street']) && $metaData['keys'][$postId]['company_street']['show'] == 1 ? $metaData['keys'][$postId]['company_street']['value'] : false;
+            $final[$key]['company_city'] = isset($metaData['keys'][$postId]['company_city']) && $metaData['keys'][$postId]['company_city']['show'] == 1 ? $metaData['keys'][$postId]['company_city']['value'] : false;
+            $final[$key]['company_state'] = isset($metaData['keys'][$postId]['company_state']) && $metaData['keys'][$postId]['company_state']['show'] == 1 ? $metaData['keys'][$postId]['company_state']['value'] : false;
+            $final[$key]['is_premium'] = isset($metaData['keys'][$postId]['is_premium']) && $metaData['keys'][$postId]['is_premium']['show'] == 1 ? $metaData['keys'][$postId]['is_premium']['value'] : false;
         }
         $this->finalItems = $final;
     }

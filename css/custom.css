@@ -12,3 +12,26 @@
         font-size: 15px;
     }
 }
+
+.grid-view .brows-job-company-img img {
+    margin: 0 auto;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: initial;
+    line-height: 50px;
+    height: 160px;
+    width: auto;
+}
+
+.grid-view .brows-job-company-img {
+    width: auto;
+    margin: 10px auto;
+    height: initial;
+    display: flex;
+    border: 0px solid #e4e4e4;
+    background: #fff;
+    align-items: center;
+    border-radius: 0;
+    line-height: 80px;
+    padding: 10px;
+}
