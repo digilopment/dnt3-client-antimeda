@@ -20,7 +20,7 @@
                     <div class="top-candidate-wrap style-2">
                         <div class="top-candidate-box">
                             <span class="tpc-status">Available</span>
-                            <h4 class="flc-rate">$17/hr</h4>
+                            <h4 class="flc-rate">$17</h4>
                             <div class="tp-candidate-inner-box">
                                 <div class="top-candidate-box-thumb">
                                     <img src="assets/img/can-5.jpg" class="img-responsive img-circle" alt="" />
@@ -57,7 +57,7 @@
                     <div class="top-candidate-wrap style-2">
                         <div class="top-candidate-box">
                             <span class="tpc-status bg-warning">At Work</span>
-                            <h4 class="flc-rate">$22/hr</h4>
+                            <h4 class="flc-rate">$22</h4>
                             <div class="tp-candidate-inner-box">
                                 <div class="top-candidate-box-thumb">
                                     <img src="assets/img/can-5.jpg" class="img-responsive img-circle" alt="" />
@@ -94,7 +94,7 @@
                     <div class="top-candidate-wrap style-2">
                         <div class="top-candidate-box">
                             <span class="tpc-status">Available</span>
-                            <h4 class="flc-rate">$19/hr</h4>
+                            <h4 class="flc-rate">$19</h4>
                             <div class="tp-candidate-inner-box">
                                 <div class="top-candidate-box-thumb">
                                     <img src="assets/img/can-5.jpg" class="img-responsive img-circle" alt="" />
@@ -131,7 +131,7 @@
                     <div class="top-candidate-wrap style-2">
                         <div class="top-candidate-box">
                             <span class="tpc-status">Available</span>
-                            <h4 class="flc-rate">$17/hr</h4>
+                            <h4 class="flc-rate">$17</h4>
                             <div class="tp-candidate-inner-box">
                                 <div class="top-candidate-box-thumb">
                                     <img src="assets/img/can-5.jpg" class="img-responsive img-circle" alt="" />
@@ -168,7 +168,7 @@
                     <div class="top-candidate-wrap style-2">
                         <div class="top-candidate-box">
                             <span class="tpc-status bg-warning">At Work</span>
-                            <h4 class="flc-rate">$22/hr</h4>
+                            <h4 class="flc-rate">$22</h4>
                             <div class="tp-candidate-inner-box">
                                 <div class="top-candidate-box-thumb">
                                     <img src="assets/img/can-5.jpg" class="img-responsive img-circle" alt="" />
@@ -205,7 +205,7 @@
                     <div class="top-candidate-wrap style-2">
                         <div class="top-candidate-box">
                             <span class="tpc-status">Available</span>
-                            <h4 class="flc-rate">$19/hr</h4>
+                            <h4 class="flc-rate">$19</h4>
                             <div class="tp-candidate-inner-box">
                                 <div class="top-candidate-box-thumb">
                                     <img src="assets/img/can-5.jpg" class="img-responsive img-circle" alt="" />

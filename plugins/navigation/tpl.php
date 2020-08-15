@@ -2,7 +2,7 @@
     <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"><i class="fa fa-bars"></i></button>
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><img src="https://codeminifier.com/job-stock-5.3/job-stock/assets/img/logo.png" class="logo logo-scrolled" alt=""></a>
+            <a class="navbar-brand" href="<?php echo WWW_PATH ?>"><img src="<?php echo $this->data['plugin_data']['logo'] ?>" class="logo logo-scrolled" alt=""></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">

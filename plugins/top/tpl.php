@@ -18,7 +18,10 @@ use DntLibrary\Base\Settings;
 
         <link rel="stylesheet" href="<?php echo $data['media_path']; ?>css/plugins.css">
         <link href="<?php echo $data['media_path']; ?>css/style.css" rel="stylesheet">
+        <link href="<?php echo $data['media_path']; ?>css/custom.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" id="jssDefault" href="<?php echo $data['media_path']; ?>css/green-style.css">
+        <script type="text/javascript" src="<?php echo $data['media_path']; ?>js/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo $data['media_path']; ?>js/jquery.validate.js"></script>
     </head>
     <body>
         <div class="Loader"></div>

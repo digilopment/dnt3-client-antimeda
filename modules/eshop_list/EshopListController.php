@@ -18,7 +18,7 @@ use DntLibrary\Base\Vendor;
 class EshopListController extends BaseController
 {
 
-    protected $rootCatId = 95;
+    protected $rootCatId = 197;
     protected $pageLimit = 18;
     protected $currentPage = 1;
     protected $rest;

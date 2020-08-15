@@ -1,4 +1,4 @@
-            <script type="text/javascript" src="<?php echo $data['media_path']; ?>js/jquery.min.js"></script>
+
             <script type="text/javascript" src="<?php echo $data['media_path']; ?>js/viewportchecker.js"></script>
             <script type="text/javascript" src="<?php echo $data['media_path']; ?>js/bootstrap.min.js"></script>
             <script type="text/javascript" src="<?php echo $data['media_path']; ?>js/bootsnav.js"></script>
