@@ -49,10 +49,10 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="item-fl-box">
                                     <div class="brows-company-pic">
-                                        <img src="assets/img/com-1.jpg" class="img-responsive" alt="" />
+                                        <img src="<?php echo $img; ?>" class="img-responsive" alt="" />
                                     </div>
                                     <div class="brows-company-name">
-                                        <h4><a href="company-detail.html">AutoDesk</a></h4>
+                                        <h4><a target="_blank" href="<?php echo $url; ?>"><?php echo $name; ?></a></h4>
                                         <span class="brows-company-tagline">Software Company</span>
                                     </div>
                                 </div>

@@ -110,6 +110,7 @@ class ProductDetailController extends BaseController
     protected function getPost()
     {
         $postId = (int) $this->webhook(3);
+        $this->postId = $postId;
         $this->item = $this->posts->getPost($postId);
     }
 
@@ -174,6 +175,9 @@ class ProductDetailController extends BaseController
             };
             $data['article']['service'] = $this->modul();
             $data['post_id'] = $this->item->id_entity;
+            $data['recruitment'] = $this->posts->getPost($this->metaData['keys'][$this->postId]['recruitment_id']['value']);
+            //var_dump($data['recruitment']->id_entity);
+            $data['recruitment_img'] = $this->image->getPostImage($data['recruitment']->id_entity, 'dnt_posts', IMAGE::MEDIUM);
 
             $this->modulConfigurator($data, $this->modul());
         } else {

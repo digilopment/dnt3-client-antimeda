@@ -96,6 +96,19 @@ class MetaServices
             '`order`' => "700",
             '`show`' => "1",
         );
+        $insertedData[] = array(
+            '`post_id`' => $postId,
+            '`service`' => $service,
+            '`vendor_id`' => Vendor::getId(),
+            '`key`' => "recruitment_id",
+            '`value`' => $defaultContent,
+            '`content_type`' => "bool",
+            '`cat_id`' => "2",
+            '`description`' => "Recruitment Company ID",
+            '`order`' => "800",
+            '`show`' => "1",
+        );
+        
         return $insertedData;
     }
 

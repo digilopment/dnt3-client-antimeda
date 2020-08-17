@@ -35,3 +35,7 @@
     line-height: 80px;
     padding: 10px;
 }
+
+.brows-company .brows-company-pic img {
+    height: auto;
+}
