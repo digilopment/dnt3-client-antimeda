@@ -16,7 +16,7 @@
                         <?php if ($row['name_url'] == "no_url") { ?>
                             <a><?php echo $row['name']; ?></a>
                         <?php } else { ?>
-                            <a class="dropdown-toggle" href="<?php echo $name_url_1; ?>"><?php echo $row['name']; ?></a>
+                            <a href="<?php echo $name_url_1; ?>"><?php echo $row['name']; ?></a>
                         <?php } ?>
                     </li>
                 <?php } ?>

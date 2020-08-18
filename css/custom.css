@@ -52,3 +52,12 @@
 .blog-news .img-holder img{
     width: 100%;
 }
+@media only screen and (max-width: 767px){
+    .grid-view.brows-job-list {
+        padding: 0px;
+    }
+    .grid-view .full-time {
+        background: #03a504;
+        color: #fff;
+    }
+}
