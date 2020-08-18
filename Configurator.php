@@ -15,9 +15,6 @@ class Configurator extends Modul
             'singl_page' => array_merge(
                     array(), $this->getSitemapModules('singl_page')
             ),
-            'search' => array_merge(
-                    array(), $this->getSitemapModules('search')
-            ),
             'clean' => array_merge(
                     array(), $this->getSitemapModules('clean')
             ),
@@ -32,9 +29,6 @@ class Configurator extends Modul
             ),
             'article_list' => array_merge(
                     array(), $this->getSitemapModules('article_list')
-            ),
-            'image_list' => array_merge(
-                    array(), $this->getSitemapModules('image_list')
             ),
             'auto_redirect' => array_merge(
                     array(), array('a/{digit}')
@@ -57,6 +51,9 @@ class Configurator extends Modul
             'business_conditions' => array_merge(
                     array(), $this->getSitemapModules('business_conditions')
             ),
+            'sign_up' => array_merge(
+                    array(), $this->getSitemapModules('sign_up')
+            ),
         );
         return $modulesRegistrator;
     }
@@ -66,9 +63,6 @@ class Configurator extends Modul
         return array(
             'singl_page' => array(
                 'service_name' => 'Singl Page',
-            ),
-            'search' => array(
-                'service_name' => 'Vyhľadávanie',
             ),
             'clean' => array(
                 'service_name' => 'Clean',
@@ -82,9 +76,6 @@ class Configurator extends Modul
             'article_list' => array(
                 'service_name' => 'Article List',
             ),
-            'image_list' => array(
-                'service_name' => 'Image List',
-            ),
             'product_detail' => array(
                 'service_name' => 'Detail Produktu',
             ),
@@ -96,6 +87,9 @@ class Configurator extends Modul
             ),
             'business_conditions' => array(
                 'service_name' => 'Obchodné podmienky',
+            ),
+            'sign_up' => array(
+                'service_name' => 'Login / Registration page',
             ),
         );
     }

@@ -41,6 +41,7 @@ class ArticleListPluginControll extends Plugin
                 $this->finalItems[$i]['name'] = $row['name'];
                 $this->finalItems[$i]['img'] = $this->image->getPostImage($row['id'], "dnt_posts", IMAGE::SMALL);
                 $this->finalItems[$i]['url'] = $this->articleView->detailUrl($row['cat_name_url'], $row['id'], $row['name_url']);
+                $this->finalItems[$i]['date'] = $row['datetime_creat'];
                 $i++;
             }
         }

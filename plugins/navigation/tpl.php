@@ -52,7 +52,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                 <?php /* <li><a href="login.html"><i class="fa fa-pencil" aria-hidden="true"></i>SignUp</a></li> */ ?>
-                <li class="left-br"><a href="javascript:void(0)" data-toggle="modal" data-target="#signup" class="signin">SignUp</a></li>
+                <li class="left-br"><a href="<?php echo WWW_PATH . 'signup'?>" class="signin">SignUp</a></li>
             </ul>
         </div>
     </div>

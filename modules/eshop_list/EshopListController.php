@@ -56,7 +56,7 @@ class EshopListController extends BaseController
 
     protected function setTitle()
     {
-        $catId = is_numeric($this->rest->webhook(3)) ? $this->rest->webhook(3) : 131;
+        $catId = is_numeric($this->rest->webhook(3)) ? $this->rest->webhook(3) : $this->rootCatId;
         $categories = $this->categories->getTreePath($catId);
         $i = 0;
         $categoryNames = [];

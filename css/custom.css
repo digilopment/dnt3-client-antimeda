@@ -39,3 +39,16 @@
 .brows-company .brows-company-pic img {
     height: auto;
 }
+.blog-grid .grid-view .brows-job-company-img img {
+    height: 170px;
+    margin: 0px auto;
+
+}
+.blog-grid .grid-view .brows-job-company-img {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+.blog-news .img-holder img{
+    width: 100%;
+}
