@@ -9,13 +9,17 @@ class MetaServices
 
     protected $content = '0';
 
+	public function __construct(){
+		$this->vendor = new Vendor();
+	}
+	
     public function init($postId, $service)
     {
         $defaultContent = $this->content;
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "price",
             '`value`' => $defaultContent,
             '`content_type`' => "text",
@@ -27,7 +31,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "position",
             '`value`' => $defaultContent,
             '`content_type`' => "text",
@@ -39,7 +43,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "specialization",
             '`value`' => $defaultContent,
             '`content_type`' => "text",
@@ -51,7 +55,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "company_name",
             '`value`' => $defaultContent,
             '`content_type`' => "text",
@@ -63,7 +67,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "company_street",
             '`value`' => $defaultContent,
             '`content_type`' => "text",
@@ -75,7 +79,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "company_state",
             '`value`' => $defaultContent,
             '`content_type`' => "text",
@@ -87,7 +91,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "is_premium",
             '`value`' => $defaultContent,
             '`content_type`' => "bool",
@@ -99,7 +103,7 @@ class MetaServices
         $insertedData[] = array(
             '`post_id`' => $postId,
             '`service`' => $service,
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`key`' => "recruitment_id",
             '`value`' => $defaultContent,
             '`content_type`' => "bool",

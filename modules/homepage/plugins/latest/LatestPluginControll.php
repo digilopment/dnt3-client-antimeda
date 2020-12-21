@@ -20,13 +20,15 @@ class LatestPluginControll extends Plugin
 
     private function preparePostsQuery($data)
     {
-        $GALLERY = explode(",", $data['meta_tree']['keys']['gallery']['value']);
-        $this->hasItems = count($GALLERY);
-        if ($this->hasItems > 0) {
-            $this->items = $GALLERY;
-        } else {
-            $this->items = false;
-        }
+		$this->hasItems = 0;
+		$this->items = false;
+		if(isset($data['meta_tree']['keys']['gallery']['value'])){
+			$GALLERY = explode(",", $data['meta_tree']['keys']['gallery']['value']);
+			$this->hasItems = count($GALLERY);
+			if ($this->hasItems > 0) {
+				$this->items = $GALLERY;
+			}
+		}
     }
 
     public function run()

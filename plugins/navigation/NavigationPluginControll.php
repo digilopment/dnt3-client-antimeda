@@ -4,6 +4,7 @@ namespace DntView\Layout\Modul\Plugin;
 
 use DntLibrary\App\Plugin;
 use DntLibrary\Base\Settings;
+use DntLibrary\Base\Dnt;
 
 class NavigationPluginControll extends Plugin
 {
@@ -16,6 +17,7 @@ class NavigationPluginControll extends Plugin
         $this->data = $data;
         $this->pluginId = $pluginId;
         $this->settings = new Settings();
+		$this->dnt = new Dnt();
     }
 
     public function setLogo()
@@ -27,6 +29,7 @@ class NavigationPluginControll extends Plugin
     public function run()
     {
         $data['logo'] = $this->setLogo();
+		$data['dnt'] = $this->dnt;
         $this->layout($this->loc, 'tpl', $data);
     }
 

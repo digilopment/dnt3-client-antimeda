@@ -1,5 +1,5 @@
 <?php
-use DntLibrary\Base\Dnt;
+$dnt = $data['plugin_data']['dnt'];
 ?>
 <div class="before-footer">
 
@@ -48,14 +48,14 @@ use DntLibrary\Base\Dnt;
                         <ul class="footer-menu">
                             <?php
                             $menu = $data['menu_items'];
-                            foreach (Dnt::orderby($menu, 'order', 'ASC') as $item) {
+                            foreach ($dnt->orderby($menu, 'order', 'ASC') as $item) {
                                 echo '<li><a href="' . WWW_PATH . $item['name_url'] . '">' . $item['name'] . '</a></li>';
                             }
                             ?>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
+               <div class="col-lg-3 col-md-3">
                     <div class="footer-widget">
                         <h4 class="widget-title">Job Market</h4>
                         <ul class="footer-menu">
@@ -67,29 +67,29 @@ use DntLibrary\Base\Dnt;
                         </ul>
                     </div>
                 </div>
-
+                
                 <div class="col-lg-3 col-md-3">
                     <div class="footer-widget">
-                        <h4 class="widget-title"></h4>
-                        <a href="<?php echo WWW_PATH . 'signup' ?>" class="other-store-link">
+                        <h4 class="widget-title">Download Apps</h4>
+                        <a href="#" class="other-store-link">
                             <div class="other-store-app">
                                 <div class="os-app-icon">
-                                    <i class="ti-user theme-cl"></i>
+                                    <i class="ti-android theme-cl"></i>
                                 </div>
                                 <div class="os-app-caps">
-                                    Sign up
-                                    <span>Recruitments</span>
+                                    Google Play
+                                    <span>Get It Now</span>
                                 </div>
                             </div>
                         </a>
-                        <a href="<?php echo WWW_PATH . 'contact' ?>" class="other-store-link">
+                        <a href="#" class="other-store-link">
                             <div class="other-store-app">
                                 <div class="os-app-icon">
-                                    <i class="ti-star theme-cl"></i>
+                                    <i class="ti-apple theme-cl"></i>
                                 </div>
                                 <div class="os-app-caps">
-                                    Contact us
-                                    <span>Cooperation</span>
+                                    App Store
+                                    <span>Now it Available</span>
                                 </div>
                             </div>
                         </a>
@@ -121,7 +121,7 @@ use DntLibrary\Base\Dnt;
                         <?php } ?>
                         <?php if ($data['meta_settings']['keys']['youtube_channel']['show'] == 1) { ?>
                             <li><a target="_blank" href="<?php echo $data['meta_settings']['keys']['youtube_channel']['value']; ?>"><i class="ti-twitter"></i></a></li>
-                        <?php } ?>
+                                <?php } ?>
                     </ul>
                 </div>
             </div>

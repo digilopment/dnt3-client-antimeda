@@ -8,6 +8,11 @@ use DntLibrary\Base\Vendor;
 class Configurator extends Modul
 {
 
+	public function __construct(){
+		parent::__construct();
+		$this->vendor = new Vendor();
+	}
+	
     public function modulesRegistrator()
     {
         $this->getSitemap();
@@ -102,7 +107,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Facebook Page Social Wall',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -112,7 +117,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Facebook Post Social Wall',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -122,7 +127,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Instagram Post Social Wall',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -132,7 +137,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Youtube Social Wall',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -142,7 +147,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Twitter Social Wall',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -152,7 +157,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Api key pre Send grid',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -162,7 +167,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Template ID pre Send grid',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -172,7 +177,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Automatické odosielanie voucherov',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -182,7 +187,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Autorizačný token pre Google Maps',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -192,7 +197,7 @@ class Configurator extends Modul
             '`value`' => '',
             '`content_type`' => 'text',
             '`description`' => 'Číslo živnostnenského registra',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '0',
             '`order`' => '10',
         );
@@ -202,7 +207,7 @@ class Configurator extends Modul
             '`value`' => 'D. Jurkoviča 900/91',
             '`content_type`' => 'text',
             '`description`' => 'Sídlo firmy - ulica',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '1',
             '`order`' => '10',
         );
@@ -212,7 +217,7 @@ class Configurator extends Modul
             '`value`' => '920 03',
             '`content_type`' => 'text',
             '`description`' => 'Sídlo firmy - psc',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '1',
             '`order`' => '10',
         );
@@ -222,7 +227,7 @@ class Configurator extends Modul
             '`value`' => 'Hlohovec m.č. Šulekovo',
             '`content_type`' => 'text',
             '`description`' => 'Sídlo firmy - mesto',
-            '`vendor_id`' => Vendor::getId(),
+            '`vendor_id`' => $this->vendor->getId(),
             '`show`' => '1',
             '`order`' => '10',
         );
